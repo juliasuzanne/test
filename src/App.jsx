@@ -27,7 +27,9 @@ export default function App() {
       </form>
       <div className="test">
         {/* <h1 className="text">Welcome</h1> */}
-        <p className="form-input">{nameEntered}</p>
+        <div className="testSkew">
+          <p className="form-input">{nameEntered}</p>
+        </div>
       </div>
 
       <svg xmlns="http://www.w3.org/2000/svg" version="1.1">

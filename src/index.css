@@ -25,7 +25,7 @@ html, body, #root{
 	justify-content: center;
 	height: 100vh;
 	letter-spacing: 1px;
-	line-height:2
+	line-height: 0.2;
 }
 
 
@@ -111,9 +111,13 @@ body{
   width: 100%;
   outline: none;
   text-align: center;
+  transform: skew(40deg, 0deg);
   line-height: 1;
   animation: squiggly-anim 0.34s linear infinite;
+}
 
+.testSkew{
+  transform: translate(60px, -20px);
 
 }
 
@@ -147,6 +151,9 @@ body{
 
 }
 
+form{
+}
+
 .form-input{
   background-color: transparent;
   color: white;
@@ -154,6 +161,7 @@ body{
   font-size: 1em;
   border: none;
   caret-color: rgb(209, 209, 209);
+
   background-image: url("https://www.icegif.com/wp-content/uploads/2023/03/icegif-34.gif");
 	background-size: cover;
 	color: transparent;
@@ -165,10 +173,13 @@ body{
 	margin: auto;
   text-align: center;
   transform: rotate(-180deg);
+  transform: skew(-105deg, -120deg);
   transform: scaleY(-1);
          -webkit-transform: scaleY(-1);
          -ms-transform: scaleY(-1);
          -o-transform: scaleY(-1);
+
+
 }
 
 
