@@ -121,6 +121,17 @@ body{
 
 }
 
+.testNoSkew{
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  outline: none;
+  text-align: center;
+  line-height: 1;
+  animation: squiggly-anim 0.34s linear infinite;
+
+}
+
 
 
 .small{
@@ -146,6 +157,28 @@ body{
 	font-size: 120px;
 	margin: auto;
   text-align: center;
+  /* transform: skew(10deg, -15deg); */
+
+
+}
+
+.form-styling2{
+  background-color: transparent;
+  color: white;
+  font-family: "Headers";
+  font-size: 1em;
+  border: none;
+  caret-color: rgb(209, 209, 209);
+  background-image: url("https://www.icegif.com/wp-content/uploads/2023/03/icegif-34.gif");
+	background-size: cover;
+	color: transparent;
+  background-clip: text;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 60px;
+	margin: auto;
+  text-align: left;
   /* transform: skew(10deg, -15deg); */
 
 
@@ -185,4 +218,31 @@ form{
 
 input:focus {
   outline:none;
+}
+
+
+@font-face {
+  font-family: "Hand";   /*Can be any text*/
+  src: local("Hand-Regular"),
+    url("/public/fonts/Hand-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Kate";   /*Can be any text*/
+  src: local("Kate-Regular"),
+    url("/public/fonts/Kate-Regular.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "Headers";   /*Can be any text*/
+  src: local("Headers-Regular"),
+    url("/public/fonts/Headers-Regular.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "JuliaG";   /*Can be any text*/
+  src: local("Myfont-Regular"),
+    url("/public/fonts/Myfont-Regular.otf") format("opentype");
 }

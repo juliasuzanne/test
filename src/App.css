@@ -8,14 +8,23 @@ html, body, #root{
   margin: 0;
   padding: 0;
 }
+
 @font-face {
-  font-family: "Handwriting";   /*Can be any text*/
-  src: local("Handwriting-Regular"),
-    url("/public/fonts/Handwriting-Regular.ttf") format("truetype");
+  font-family: "Hand";   /*Can be any text*/
+  src: local("Hand-Regular"),
+    url("/public/fonts/Hand-Regular.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Kate";   /*Can be any text*/
+  src: local("Kate-Regular"),
+    url("/public/fonts/Kate-Regular.ttf") format("truetype");
+}
+
 
 @font-face {
   font-family: "Headers";   /*Can be any text*/
   src: local("Headers-Regular"),
     url("/public/fonts/Headers-Regular.ttf") format("truetype");
 }
+

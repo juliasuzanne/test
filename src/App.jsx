@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useRef, useEffect } from "react";
+import Navigation from "./Navigation";
 
 export default function App() {
   const [nameEntered, setFirstName] = useState("Name");
@@ -13,8 +14,8 @@ export default function App() {
     // <div className="title">
     //   <h1 className="text">Welcome</h1>
     // </div>
-
     <div className="title">
+      <Navigation />
       <form autoComplete="off">
         <input
           onChange={(e) => (e.target.value != null ? setFirstName(e.target.value) : "Name")}
@@ -31,7 +32,11 @@ export default function App() {
           <p className="form-input">{nameEntered}</p>
         </div>
       </div>
-
+      <div className="testNoSkew">
+        <form autoComplete="off">
+          <input type="text" defaultValue={nameEntered} className="form-styling2" name="name" required />
+        </form>
+      </div>
       <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
         <defs>
           <filter id="squiggly-0">
