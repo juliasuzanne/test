@@ -1,15 +1,19 @@
 import { useState } from "react";
 import { useRef, useEffect } from "react";
 import Navigation from "./Navigation";
+import React from "react";
+import useSound from "use-sound";
+import whale from "/whale.wav";
 
 export default function App() {
   const [nameEntered, setFirstName] = useState("Name");
   const ref = useRef();
+  const [playSound] = useSound(whale);
 
   const handleSetName = () => {
     console.log("Set name");
   };
-  // useEffect(handleSetName, []);
+
   return (
     // <div className="title">
     //   <h1 className="text">Welcome</h1>
@@ -38,6 +42,7 @@ export default function App() {
             <input type="text" defaultValue="password" className="form-styling2" name="name" required />
           </form>
         </div>
+        <button onClick={playSound}>Play Sound</button>
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
           <defs>
             <filter id="squiggly-0">
